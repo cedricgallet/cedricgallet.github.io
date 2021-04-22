@@ -1,94 +1,95 @@
 html,
 body {
-    margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100%;
-    font-family: roboto Condensed;
-    background-color: #D3D0CB;
-}
-
-#homeContainer {
+    margin: 0;
     height: 100vh;
 }
 
-#one {
-    height: 100vh;
+
+/* CONTAINER HEADER */
+
+
+#containerheader {
+    height: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background.jpeg);
 }
-
-#two {
-    height: 100vh;
-}
-
-#three {
-    height: 100vh;
-}
-
-h2 {
-    text-align: center;
-    font-size: 36px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 420x;
-}
-
-
-/* BLOCK1 */
-
 
 .block1 {
     display: flex;
-    position: fixed;
-    height: 70px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background: RGB(134, 142, 150, 0.4);
 }
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    font-size: 24px;
-    color: black;
-}
-
-.metier {
-    display: flex;
-    flex-direction: flex-start;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 33.33%;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 33.33%;
-}
-
-.nom {
-    display: flex;
-    flex-direction: flex-end;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 33.33%;
-}
-
-/* BLOCK2 */
-
 
 .block2 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 70%;
-    background: url(../img/photo-restaurant.jpeg);
+    align-items: center;
 }
 
+.block2 img {
+    height: 70px;
+    width: 70px;
+}
+
+.block3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.block4 {
+    display: flex;
+    justify-content: center;
+}
+
+.block4 a {
+    text-decoration: none;
+    color:red;
+}
+
+
+/* CONTAINER CONTENT */
+
+
+#containercontent {
+    height: 60%;
+}
+
+.content1 {
+    display: flex;
+    justify-content: center;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+}
+
+.content3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* CONTAINER FOOTER */
+
+
+#containerfooter {
+    height: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background.jpeg);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    height: 70px;
+    width: 70px;
+}
