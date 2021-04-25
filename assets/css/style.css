@@ -1,3 +1,258 @@
-.container-fluid {
-    background-image: url(assets/img/header-bg.png);
+/*STYLES GENERAUX*/
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*HEADER & FOOTER*/
+
+header,
+footer {
+    width: 100%;
+    padding: 20px 0px;
+    background: url("../img/background.png") #4f4f4f;
+    background-size: cover;
+    box-shadow: 0px 0px 15px #333;
+}
+
+header {
+    border-bottom: 2px solid #fff;
+    height: 80px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer {
+    border-top: 2px solid #fff;
+}
+
+footer p {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+/*SECTIONS*/
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+section>div {
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+
+.presentation {
+    border-bottom: 2px dashed #ccc;
+}
+
+.presentation a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: rgb(27, 23, 23);
+    background-color: rgb(204, 223, 169);
+    box-shadow: 0px 0px 10px rgb(224, 40, 40);
+    border-radius: 5px;
+}
+
+.presentation p {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+/*SECTION EXPERIENCES PRO ET FORMATION ET DIPLOMES*/
+
+.exp {
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.exp-info {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.exp-info {
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp h4 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/*SECTION COMPETENCES INFORMATIQUES*/
+
+.comp {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+
+.comp p {
+    flex: 0 0 40%;
+}
+
+.conteneur-barre {
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+
+.barre {
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.c75 {
+    width: 90%;
+    background-color: #4B8;
+}
+
+.c80 {
+    width: 45%;
+    background-color: #4B8;
+}
+
+.c85 {
+    width: 70%;
+    background-color: #4B8;
+}
+
+.c90 {
+    width: 3%;
+    background-color: #4B8;
+}
+
+.c95 {
+    width: 3%;
+    background-color: #4B8;
+}
+
+.c100 {
+    width: 10%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+
+.comp2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.conteneur-barre2 {
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+
+
+    .presentation {
+        flex: 0 0 45%;
+    }
+
+    .presentation {
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+
+    .presentation a {
+        border: 2px solid transparent;
+    }
+
+    .presentation a:hover {
+        color: #97ca5c;
+        background-color: #fff;
+        border: 2px solid #97ca5c;
+        box-shadow: 0px 0px 20px #666;
+    }
+
+    .exp-info,
+    .exp-desc {
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
 }
