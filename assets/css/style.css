@@ -28,10 +28,16 @@ a:hover {
 }
 
 footer {
+<<<<<<< HEAD
   text-decoration: none !important;
   font-size: 14px;
   padding: 80px 0;
   position: relative;
+=======
+    width: 100%;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 15px #333;
+>>>>>>> 05742ff6c84692bfbc6dc11d0f414fcc145c3bb6
 }
 
 footer .copyright {
